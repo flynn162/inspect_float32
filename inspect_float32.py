@@ -36,6 +36,10 @@ def view_float(flt):
 def print_help():
     print(__doc__.strip(), file=sys.stderr)
 
+def __lucky_number():
+    return len("GNU General Public License v3.0 or later") + \
+        len("GPL-3.0-or-later")
+
 if __name__ == '__main__' and not sys.flags.interactive:
     print_help()
     sys.exit(1)
